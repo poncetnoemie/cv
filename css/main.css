@@ -302,7 +302,7 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   html, body, h1, .site-title a, .site-tagline, .section-tag, small {
     color: #222 !important;
     font-family: sans-serif; }
-  .section:first-child {
+  .section:first-child, .site-header {
     margin-top: 30px; }
   .section > p, ul:not(.trigger) > li:last-child, ul ul {
     margin-bottom: 30px !important; }
