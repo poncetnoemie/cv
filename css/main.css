@@ -31,7 +31,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   font-family: "Quicksand", Helvetica, Arial, sans-serif;
   color: #222;
@@ -131,7 +131,7 @@ BASICS - Recurring elements
     padding: 10px; }
   .table small {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem; }
   .table .td-min {
     width: 30px;
@@ -143,7 +143,7 @@ BASICS - Recurring elements
     border-top: 1px solid #ddd; }
   .table tbody .table-title td {
     background-color: #f3f3f3;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 2px 10px;
     border: none; }
   .table tbody .table-block {
@@ -248,7 +248,7 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   text-transform: uppercase; }
 
 .section-subtitle {
-  color: #EFAE2F;
+  color: #04b7e4;
   font-weight: bold;
   font-size: 1.6rem;
   margin-right: 10px; }
@@ -326,7 +326,7 @@ MIRADOR - Mirador style
   .mirador .site-header, .mirador .site-header a {
     color: #222; }
   .mirador .site-header .site-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     float: left;
     margin: -2px 0 0 0; }
     .mirador .site-header .site-title img {
@@ -362,13 +362,17 @@ MIRADOR - Mirador style
 .page-title {
   font-size: 3.5rem; }
 
+.page-invoice .site-header, .page-invoice .site-tagline {
+  margin-bottom: 0; }
+
 .invoice .invoice-reference {
-  text-align: center;
+  /*text-align: center;*/
   margin-bottom: 30px; }
 
 .invoice .invoice-body {
   clear: both;
-  padding: 15px 0 60px 0; }
+  padding: 15px 0 60px 0;
+  page-break-after: always; }
 
 .invoice .invoice-footer {
   font-size: 1.1rem;
@@ -389,14 +393,31 @@ MIRADOR - Mirador style
   overflow: auto;
   padding: 20px; }
 
+.invoice .invoice-signs {
+  display: none; }
+
 .list .table td {
   padding: 5px 10px; }
 
 /* Print */
 @media print {
-  .mirador .site-header {
+  .invoice-signs {
+    display: block; }
+    .invoice-signs .client {
+      float: right; }
+    .invoice-signs .presta {
+      float: left; }
+  .site-header {
     margin: 0 auto; }
-  .mirador .invoice-header .sumup {
+  .invoice .invoice-header .sumup {
     background-color: #eee;
     color: #222 !important;
-    border: 1px solid #ddd; } }
+    border: 1px solid #ddd; }
+  .invoice .invoice-body {
+    padding-bottom: 0; }
+  .invoice .invoice-footer {
+    background-color: #eee;
+    color: #222 !important;
+    border: 1px solid #ddd; }
+    .invoice .invoice-footer .title {
+      margin-top: 0; } }
