@@ -239,21 +239,22 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   vertical-align: middle;
   display: inline-block; }
 
-.section-block {
+.section-subtitle, .section-block {
   font-size: 1.6rem; }
+
+.section-tag, .section-subtitle {
+  margin-right: 10px; }
 
 .section-tag {
   color: #FFFFFF;
-  margin-right: 5px;
+  margin-right: 10px;
   background-color: #222;
   padding: 5px 8px;
   text-transform: uppercase; }
 
 .section-subtitle {
   color: #04b7e4;
-  font-weight: bold;
-  font-size: 1.6rem;
-  margin-right: 10px; }
+  font-weight: bold; }
 
 .view-home .site-header {
   text-align: center;
