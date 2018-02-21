@@ -292,9 +292,6 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
     margin-bottom: 30px; }
   small, span {
     display: block; }
-  small {
-    text-align: center;
-    margin-bottom: 15px; }
   ul ul {
     margin-left: 0;
     list-style: inside disc; }
