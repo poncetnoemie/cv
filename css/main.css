@@ -276,6 +276,10 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
 .section-title {
   font-size: 2.0rem; }
 
+.contact-phone {
+  white-space: nowrap; }
+
+/* Responsive */
 @media only screen and (max-device-width: 640px), only screen and (max-width: 640px) {
   html, body {
     min-width: 100% !important;
@@ -300,9 +304,12 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
     font-size: 35px; }
   .page-header {
     margin-bottom: 30px; }
+  .section-title {
+    margin-bottom: 15px; }
   .section-subtitle, .section-tag, .section-block {
     display: block;
-    text-align: center; } }
+    text-align: left;
+    margin: 0; } }
 
 @media print {
   html, body, h1, .site-title a, .site-tagline, .section-tag, small {
