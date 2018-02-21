@@ -296,7 +296,9 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   .page-title {
     font-size: 35px; }
   .page-header {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .section-subtitle, .section-tag, .section-block {
+    display: block; } }
 
 @media print {
   html, body, h1, .site-title a, .site-tagline, .section-tag, small {
