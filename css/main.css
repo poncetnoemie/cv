@@ -310,7 +310,10 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   .section-subtitle, .section-tag, .section-block {
     display: block;
     text-align: left;
-    margin: 0; } }
+    margin: 0; }
+  .section-tag {
+    margin-bottom: 15px;
+    text-align: center; } }
 
 @media print {
   html, body, h1, .site-title a, .site-tagline, .section-tag, small {
