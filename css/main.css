@@ -298,6 +298,10 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   ul ul {
     margin-left: 0;
     list-style: inside disc; }
+  .site-title {
+    font-size: 4rem;
+    margin: 15px;
+    line-height: normal; }
   .page-content {
     padding: 30px; }
   .page-title {
