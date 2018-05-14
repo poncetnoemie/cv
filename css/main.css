@@ -56,8 +56,7 @@ ul {
   list-style: none; }
 
 ul > li {
-  margin-bottom: 10px;
-  list-style-type: disc; }
+  margin-bottom: 10px; }
 
 ul:not(.trigger) > li:last-child {
   margin-bottom: 60px; }
@@ -219,7 +218,7 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   margin: 30px auto; }
 
 .site-header, .site-header a {
-  color: #04b7e4;
+  color: #fff;
   text-decoration: none; }
 
 .site-footer {
@@ -306,7 +305,8 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   .site-title {
     font-size: 4rem;
     margin: 15px;
-    line-height: normal; }
+    line-height: normal;
+    color: #04b7e4; }
   .page-content {
     padding: 30px; }
   .page-title {
