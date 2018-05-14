@@ -56,7 +56,8 @@ ul {
   list-style: none; }
 
 ul > li {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  list-style-type: disc; }
 
 ul:not(.trigger) > li:last-child {
   margin-bottom: 60px; }
@@ -218,7 +219,7 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   margin: 30px auto; }
 
 .site-header, .site-header a {
-  color: #fff;
+  color: #04b7e4;
   text-decoration: none; }
 
 .site-footer {
@@ -248,9 +249,10 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
 .section-tag {
   color: #FFFFFF;
   margin-right: 10px;
-  background-color: #222;
+  background-color: #04b7e4;
   padding: 5px 8px;
   text-transform: uppercase;
+  font-weight: bold;
   min-width: 140px;
   text-align: center;
   display: inline-block; }
