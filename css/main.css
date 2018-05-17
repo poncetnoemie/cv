@@ -248,7 +248,7 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
 .section-tag {
   color: #FFFFFF;
   margin-right: 10px;
-  background-color: #04b7e4;
+  background-color: #009f5c;
   padding: 5px 8px;
   text-transform: uppercase;
   font-weight: bold;
@@ -257,7 +257,7 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
   display: inline-block; }
 
 .section-subtitle {
-  color: #04b7e4;
+  color: #009f5c;
   font-weight: bold; }
 
 .view-home .site-header {
@@ -306,7 +306,7 @@ LAYOUT - Site skeleton (wrapper, header, footer, post, etc...)
     font-size: 4rem;
     margin: 15px;
     line-height: normal;
-    color: #04b7e4; }
+    color: #009f5c; }
   .page-content {
     padding: 30px; }
   .page-title {
