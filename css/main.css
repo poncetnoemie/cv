@@ -186,10 +186,6 @@ section {
     -webkit-text-size-adjust: none;
     min-width: 100% !important;
   }
-  .wrap {
-    margin: 5%;
-    width: 90% !important;
-  }
   header {
     text-align: center;
     margin-bottom: 3rem;
@@ -199,11 +195,6 @@ section {
   }
   small {
     font-size: 1.4rem;
-  }
-  ul ul {
-    list-style: inside disc;
-    margin-bottom: 1.5rem;
-    margin-left: 0;
   }
   .page-header {
     text-align: left;
@@ -236,7 +227,6 @@ section {
     margin-bottom: 1.5rem;
   }
   .tag {
-    display: block;
     margin-bottom: 1.5rem;
     max-width: 45%;
     text-align: center;
