@@ -1,8 +1,7 @@
-@charset "UTF-8";
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html,
@@ -15,18 +14,14 @@ html {
 }
 
 body {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  font-family: "Quicksand", Helvetica, Arial, sans-serif;
   color: #222;
+  font-family: "Quicksand", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
 [class*="title"] {
   font-family: "Quicksand", Helvetica, Arial, sans-serif;
   font-size: 125%;
@@ -45,22 +40,17 @@ a:hover {
 }
 
 ul {
-  margin: 15px 0;
-  padding: 0;
   list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
 }
 
 ul > li {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
-ul:not(.trigger) > li:last-child {
+ul > li:last-child {
   margin-bottom: 45px;
-}
-
-ul ul {
-  margin: 30px 0 60px 30px;
-  list-style: disc;
 }
 
 p {
@@ -68,7 +58,6 @@ p {
 }
 
 header,
-nav,
 footer,
 section {
   display: block;
@@ -89,115 +78,113 @@ section {
 }
 
 .wrapper {
-  max-width: 900px;
-  padding: 0 30px;
   margin: 0 auto;
+  max-width: 900px;
+  padding: 0 3rem;
   zoom: 1;
 }
 @media screen and (max-width: 480px) {
   .wrapper .wrapper {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
-.site-header,
-.site-footer {
+.page {
+  background-color: #ffffff;
+  border: 2px solid #222;
+  margin-top: 6rem;
+  padding: 6rem;
+}
+
+.page-header,
+.page-footer {
+  margin-bottom: 6rem;
   text-align: center;
-  margin: 30px auto;
 }
 
-.site-header {
-  margin-top: 60px;
-  text-decoration: none;
-}
-
-.site-footer {
-  color: #999;
+.page-footer {
   font-size: 1.2rem;
+  margin-top: 3rem;
 }
 
-.site-title {
+.page-title {
   font-size: 6rem;
   margin: 0;
 }
 
-.site-tagline {
-  color: #ffffff;
-  margin-right: 10px;
+.page-subtitle {
   background-color: #222;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-  min-width: 140px;
-  text-align: center;
-  display: inline-block;
   border: 2px solid #222;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 140px;
+  padding: 5px 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .section-subtitle,
 .tag,
-.section-block {
-  vertical-align: middle;
+.list-item {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .section-subtitle,
-.section-block {
+.list-item {
   font-size: 1.6rem;
 }
 
 .tag {
-  color: #ffffff;
-  margin-right: 10px;
   background-color: #222;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  min-width: 140px;
-  text-align: center;
-  display: inline-block;
   border: 2px solid #222;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 80%;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  min-width: 140px;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
 }
-
+.tag-ghost,
 .tag-light {
   background-color: transparent;
   color: #222;
 }
 
-.page-content {
-  background-color: #ffffff;
-  padding: 60px;
+.tag-ghost {
+  border-color: transparent;
+  padding: 0 1rem;
 }
 
 .section p {
-  margin: 15px 0;
+  margin: 1.5rem 0;
 }
 
 .section > p {
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .section-title {
   font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.contact-phone {
-  white-space: nowrap;
+  margin-bottom: 1.5rem;
 }
 
 .list {
   padding-top: 10px;
 }
 
-.section-block {
+.list-item {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
 }
 
-.section-block p {
+.list-item p {
   margin: 0;
 }
 
@@ -205,16 +192,16 @@ section {
   only screen and (max-width: 640px) {
   html,
   body {
-    min-width: 100% !important;
     -webkit-text-size-adjust: none;
+    min-width: 100% !important;
   }
   .wrap {
-    width: 90% !important;
     margin: 5%;
+    width: 90% !important;
   }
   header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
   span {
     display: block;
@@ -223,17 +210,17 @@ section {
     font-size: 1.4rem;
   }
   ul ul {
-    margin-left: 0;
     list-style: inside disc;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
   }
-  .site-header {
+  .page-header {
     text-align: left;
   }
-  .site-title {
+  .page-title {
     font-size: 5rem;
-    margin: 15px 0;
     line-height: normal;
+    margin: 1.5rem 0;
   }
   .page-content {
     padding: 0;
@@ -242,26 +229,26 @@ section {
     font-size: 35px;
   }
   .page-header {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
   .section-title {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
   .section-subtitle,
   .tag,
-  .section-block {
+  .list-item {
     display: block;
-    text-align: left;
     margin: 0;
+    text-align: left;
   }
-  .section-block p {
-    margin-bottom: 15px;
+  .list-item p {
+    margin-bottom: 1.5rem;
   }
   .tag {
-    margin-bottom: 15px;
-    text-align: center;
-    max-width: 45%;
     display: block;
+    margin-bottom: 1.5rem;
+    max-width: 45%;
+    text-align: center;
   }
   .section-subtitle {
     font-size: 2rem;
@@ -282,55 +269,53 @@ section {
   h1,
   h2,
   h3,
-  .site-title,
-  .site-tagline,
+  .page-title,
+  .page-subtitle,
   .tag,
   .section-title,
-  .section-subtitle,
-  small {
+  .section-subtitle {
+    background-color: transparent;
     color: #222 !important;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: transparent;
   }
 
   .wrapper {
     page-break-after: auto;
   }
 
-  .site-title {
-    font-size: 4.5rem;
+  .page-title {
+    font-size: 4rem;
     line-height: normal;
   }
-  .site-tagline {
-    font-size: 1.4rem;
+  .page-subtitle {
     font-weight: bold;
+    margin-bottom: 3rem;
   }
   .section:first-child,
-  .site-header {
-    margin-top: 30px;
+  .page-header {
+    margin-top: 3rem;
   }
-  .site-header {
+  .page-header {
+    margin: 0;
     text-align: left;
-    margin-bottom: 0;
   }
   .section:first-child {
     margin-top: 0;
   }
   .section > p,
-  ul:not(.trigger) > li:last-child,
-  ul ul {
-    margin-bottom: 30px !important;
+  ul > li:last-child {
+    margin-bottom: 3rem !important;
   }
   .section p {
     margin: 0;
   }
   .page-content,
   .page-content ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
   .page-contact {
-    margin-bottom: 45px;
+    margin-bottom: 3rem;
   }
   .hide-print {
     display: none;
