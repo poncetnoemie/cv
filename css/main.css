@@ -147,11 +147,6 @@ section {
   font-size: 1.6rem;
 }
 
-.tag,
-.section-subtitle {
-  margin-right: 10px;
-}
-
 .tag {
   color: #ffffff;
   margin-right: 10px;
@@ -234,13 +229,12 @@ section {
     margin-bottom: 15px;
   }
   .site-title {
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 15px;
     line-height: normal;
-    color: #009f5c;
   }
   .page-content {
-    padding: 30px;
+    padding: 0;
   }
   .page-title {
     font-size: 35px;
@@ -257,6 +251,9 @@ section {
     display: block;
     text-align: left;
     margin: 0;
+  }
+  .section-block p {
+    margin-bottom: 15px;
   }
   .tag {
     margin-bottom: 15px;
