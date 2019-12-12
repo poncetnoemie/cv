@@ -19,7 +19,6 @@ body {
   line-height: 1.5;
   font-family: "Quicksand", Helvetica, Arial, sans-serif;
   color: #222;
-  background-color: #222;
 }
 
 h1,
@@ -108,9 +107,8 @@ section {
   margin: 30px auto;
 }
 
-.site-header,
-.site-header a {
-  color: #fff;
+.site-header {
+  margin-top: 60px;
   text-decoration: none;
 }
 
@@ -120,17 +118,25 @@ section {
 }
 
 .site-title {
-  font-size: 5rem;
+  font-size: 6rem;
   margin: 0;
 }
 
 .site-tagline {
-  opacity: 0.5;
-  margin: 0 0 30px 0;
+  color: #ffffff;
+  margin-right: 10px;
+  background-color: #222;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-width: 140px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #222;
 }
 
 .section-subtitle,
-.section-tag,
+.tag,
 .section-block {
   vertical-align: middle;
   display: inline-block;
@@ -141,16 +147,16 @@ section {
   font-size: 1.6rem;
 }
 
-.section-tag,
+.tag,
 .section-subtitle {
   margin-right: 10px;
 }
 
-.section-tag {
+.tag {
   color: #ffffff;
   margin-right: 10px;
   background-color: #222;
-  padding: 5px 8px;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
   font-weight: bold;
   min-width: 140px;
@@ -159,7 +165,7 @@ section {
   border: 2px solid #222;
 }
 
-.section-tag-light {
+.tag-light {
   background-color: transparent;
   color: #222;
 }
@@ -188,6 +194,16 @@ section {
 
 .list {
   padding-top: 10px;
+}
+
+.section-block {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.section-block p {
+  margin: 0;
 }
 
 @media only screen and (max-device-width: 640px),
@@ -236,13 +252,13 @@ section {
     margin-bottom: 15px;
   }
   .section-subtitle,
-  .section-tag,
+  .tag,
   .section-block {
     display: block;
     text-align: left;
     margin: 0;
   }
-  .section-tag {
+  .tag {
     margin-bottom: 15px;
     text-align: center;
   }
@@ -267,7 +283,7 @@ section {
   h3,
   .site-title,
   .site-tagline,
-  .section-tag,
+  .tag,
   .section-title,
   .section-subtitle,
   small {
@@ -285,9 +301,7 @@ section {
     line-height: normal;
   }
   .site-tagline {
-    margin: 0 0 15px 0;
-    opacity: 1;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
   }
   .section:first-child,
