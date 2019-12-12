@@ -113,19 +113,6 @@ section {
   margin: 0;
 }
 
-.page-subtitle {
-  background-color: #222;
-  border: 2px solid #222;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 10px;
-  min-width: 140px;
-  padding: 5px 1.5rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .section-subtitle,
 .tag,
 .list-item {
@@ -160,6 +147,10 @@ section {
 .tag-ghost {
   border-color: transparent;
   padding: 0 1rem;
+}
+
+.page-subtitle {
+  font-size: 90%;
 }
 
 .section p {
