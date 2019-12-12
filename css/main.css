@@ -16,7 +16,7 @@ html {
 
 body {
   font-size: 1.4rem;
-  line-height: 1.25;
+  line-height: 1.5;
   font-family: "Quicksand", Helvetica, Arial, sans-serif;
   color: #222;
   background-color: #222;
@@ -46,17 +46,17 @@ a:hover {
 }
 
 ul {
-  margin: 10px 0;
+  margin: 15px 0;
   padding: 0;
   list-style: none;
 }
 
 ul > li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 ul:not(.trigger) > li:last-child {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 ul ul {
@@ -75,163 +75,8 @@ section {
   display: block;
 }
 
-table,
-tr,
-th,
-td {
-  text-align: left;
-}
-
-address {
-  font-style: normal;
-}
-
-hr {
-  border: 0;
-  border-bottom: 1px dashed #ccc;
-}
-
-/*
---------------------------------------------------------------
-BASICS - Recurring elements
---------------------------------------------------------------
-*/
-/* Text */
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
 .bold {
   font-weight: bold;
-}
-
-.caps {
-  text-transform: uppercase;
-}
-
-.font-xl,
-.page-title {
-  font-size: 2.2rem;
-}
-
-.font-lg {
-  font-size: 1.6rem;
-}
-
-.font-sm {
-  font-size: 1.2rem;
-}
-
-.font-xs {
-  font-size: 1.1rem;
-}
-
-/* Misc */
-.inactive {
-  opacity: 0.5;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-/* Tables */
-.table {
-  margin-top: 30px;
-  border-collapse: collapse;
-  width: 100%;
-  line-height: 34px;
-}
-.table th,
-.table td {
-  padding: 10px;
-}
-.table small {
-  display: block;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-}
-.table .td-min {
-  width: 30px;
-  text-align: center;
-}
-.table thead th {
-  font-weight: bold;
-  border-bottom: 2px solid #999;
-}
-.table tbody tr td {
-  border-top: 1px solid #ddd;
-}
-.table tbody .table-title td {
-  background-color: #f3f3f3;
-  font-size: 1.4rem;
-  padding: 2px 10px;
-  border: none;
-}
-.table tbody .table-block {
-  line-height: 18px;
-}
-.table tbody .table-block p {
-  margin: 0.2rem 0;
-}
-.table tbody .table-total td {
-  border-top: 2px solid #ddd;
-  text-align: right;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.table tbody ul,
-.table tbody li {
-  line-height: normal;
-  list-style: inside disc;
-  margin: 0 0 5px 10px;
-}
-.table tbody ul {
-  margin-top: 15px;
-}
-.table tbody ul ul {
-  display: none;
-}
-.table tbody ul:not(.trigger) > li:last-child {
-  margin-bottom: 0;
-}
-
-/* Alerts & highlight */
-.highlight {
-  background-color: #fff6bc;
-  font-weight: bold;
-  padding: 15px;
-  margin: 30px 0;
-  text-align: center;
-}
-
-/* Colors */
-.color-grey {
-  color: #999;
-}
-
-.color-grey-light {
-  color: #ddd;
-}
-
-.color-success {
-  color: #71ba17;
-}
-
-.color-warning {
-  color: #ff9e48;
-}
-
-.color-danger {
-  color: red;
 }
 
 .wrapper:before,
@@ -280,9 +125,7 @@ BASICS - Recurring elements
 }
 
 .site-tagline {
-  text-transform: uppercase;
   opacity: 0.5;
-  font-size: 1.2rem;
   margin: 0 0 30px 0;
 }
 
@@ -306,26 +149,19 @@ BASICS - Recurring elements
 .section-tag {
   color: #ffffff;
   margin-right: 10px;
-  background-color: #009f5c;
+  background-color: #222;
   padding: 5px 8px;
   text-transform: uppercase;
   font-weight: bold;
   min-width: 140px;
   text-align: center;
   display: inline-block;
+  border: 2px solid #222;
 }
 
-.section-subtitle {
-  color: #009f5c;
-  font-weight: bold;
-}
-
-.view-home .site-header {
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  margin: -30px auto 0 auto;
+.section-tag-light {
+  background-color: transparent;
+  color: #222;
 }
 
 .page-content {
@@ -342,14 +178,18 @@ BASICS - Recurring elements
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .contact-phone {
   white-space: nowrap;
 }
 
-/* Responsive */
+.list {
+  padding-top: 10px;
+}
+
 @media only screen and (max-device-width: 640px),
   only screen and (max-width: 640px) {
   html,
@@ -413,32 +253,71 @@ BASICS - Recurring elements
 
 @media print {
   html,
+  body {
+    border: 1px solid white;
+    height: 99%;
+    page-break-after: avoid;
+    page-break-before: avoid;
+  }
+
+  html,
   body,
   h1,
-  .site-title a,
+  h2,
+  h3,
+  .site-title,
   .site-tagline,
   .section-tag,
+  .section-title,
+  .section-subtitle,
   small {
     color: #222 !important;
-    font-family: arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+  }
+
+  .wrapper {
+    page-break-after: auto;
+  }
+
+  .site-title {
+    font-size: 4.5rem;
+    line-height: normal;
+  }
+  .site-tagline {
+    margin: 0 0 15px 0;
+    opacity: 1;
+    font-size: 1.8rem;
+    font-weight: bold;
   }
   .section:first-child,
   .site-header {
     margin-top: 30px;
+  }
+  .site-header {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .section:first-child {
+    margin-top: 0;
   }
   .section > p,
   ul:not(.trigger) > li:last-child,
   ul ul {
     margin-bottom: 30px !important;
   }
-  .page-content {
+  .section p {
+    margin: 0;
+  }
+  .page-content,
+  .page-content ul {
     padding: 0;
+    margin: 0;
   }
-  .site-footer,
-  .site-nav {
+  .page-contact {
+    margin-bottom: 45px;
+  }
+  .hide-print {
     display: none;
-  }
-  .highlight {
-    border: 1px solid #222;
   }
 }
