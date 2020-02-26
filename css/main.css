@@ -178,7 +178,7 @@ section {
   .page-title {
     font-size: 5rem;
     line-height: 1;
-    margin: 3rem 0;
+    margin: 2rem 0 3rem 0;
     text-align: center;
   }
   .page-content {
@@ -205,7 +205,10 @@ section {
     font-size: 2rem;
   }
   .page-subtitle {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
+  }
+  .hide-sm {
+    display: none;
   }
 }
 
