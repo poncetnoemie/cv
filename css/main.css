@@ -168,12 +168,19 @@ section {
   small {
     font-size: 1.4rem;
   }
+  p,
+  .page-contact {
+    font-size: 1.8rem;
+  }
   .page {
     margin-top: 0;
     padding: 2.5rem;
   }
   .page-header {
     text-align: left;
+  }
+  .page-footer {
+    margin-bottom: 0;
   }
   .page-title {
     font-size: 5rem;
@@ -195,11 +202,12 @@ section {
     text-align: left;
   }
   .list-item p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 4.5rem;
   }
   .tag {
     margin-bottom: 1.5rem;
     text-align: center;
+    font-size: 100%;
   }
   .section-subtitle {
     font-size: 2rem;
