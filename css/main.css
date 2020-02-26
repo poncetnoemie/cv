@@ -3,23 +3,20 @@
   margin: 0;
   padding: 0;
 }
-
 html,
 body {
   height: 100%;
+  min-height: 100%;
 }
-
 html {
   font-size: 62.5%;
 }
-
 body {
   color: #222;
   font-family: "Quicksand", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
 }
-
 h1,
 h2,
 [class*="title"] {
@@ -27,104 +24,77 @@ h2,
   font-size: 125%;
   font-weight: 700;
 }
-
 a,
 a:visited {
   color: #222;
   cursor: pointer;
   outline: none;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
   margin: 1.5rem 0;
   padding: 0;
 }
-
 ul > li {
   margin-bottom: 1.5rem;
 }
-
 ul > li:last-child {
-  margin-bottom: 45px;
+  margin-bottom: 3rem;
 }
-
 p {
   margin: 0.5em 0;
 }
-
 header,
 footer,
 section {
   display: block;
 }
-
 .bold {
   font-weight: bold;
 }
-
-.wrapper:before,
-.wrapper:after {
-  content: "";
-  display: table;
+.nowrap {
+  white-space: nowrap;
 }
-
-.wrapper:after {
-  clear: both;
-}
-
 .wrapper {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 900px;
-  padding: 0 3rem;
-  zoom: 1;
+  padding: 3rem;
+  width: 100%;
 }
-@media screen and (max-width: 480px) {
-  .wrapper .wrapper {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
 .page {
   background-color: #ffffff;
   border: 2px solid #222;
   margin-top: 6rem;
   padding: 6rem;
 }
-
 .page-header,
 .page-footer {
   margin-bottom: 6rem;
   text-align: center;
 }
-
 .page-footer {
   font-size: 1.2rem;
   margin-top: 3rem;
 }
-
 .page-title {
   font-size: 6rem;
   margin: 0;
 }
-
 .section-subtitle,
 .tag,
 .list-item {
   display: inline-block;
   vertical-align: middle;
 }
-
 .section-subtitle,
 .list-item {
   font-size: 1.6rem;
 }
-
 .tag {
   background-color: #222;
   border: 2px solid #222;
@@ -133,7 +103,7 @@ section {
   font-size: 80%;
   font-weight: bold;
   margin-right: 1.5rem;
-  min-width: 140px;
+  min-width: 15rem;
   padding: 0.6rem 1rem;
   text-align: center;
   text-transform: uppercase;
@@ -147,6 +117,7 @@ section {
 .tag-ghost {
   border-color: transparent;
   padding: 0 1rem;
+  font-size: 1.8rem;
 }
 
 .page-subtitle {
@@ -167,7 +138,7 @@ section {
 }
 
 .list {
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 .list-item {
@@ -190,31 +161,31 @@ section {
     text-align: center;
     margin-bottom: 3rem;
   }
-  span {
+  span,
+  small {
     display: block;
   }
   small {
     font-size: 1.4rem;
+  }
+  .page {
+    margin-top: 0;
+    padding: 2.5rem;
   }
   .page-header {
     text-align: left;
   }
   .page-title {
     font-size: 5rem;
-    line-height: normal;
-    margin: 1.5rem 0;
+    line-height: 1;
+    margin: 3rem 0;
+    text-align: center;
   }
   .page-content {
     padding: 0;
   }
-  .page-title {
-    font-size: 35px;
-  }
   .page-header {
     margin-bottom: 3rem;
-  }
-  .section-title {
-    margin-bottom: 1.5rem;
   }
   .section-subtitle,
   .tag,
@@ -228,11 +199,13 @@ section {
   }
   .tag {
     margin-bottom: 1.5rem;
-    max-width: 45%;
     text-align: center;
   }
   .section-subtitle {
     font-size: 2rem;
+  }
+  .page-subtitle {
+    margin-bottom: 6rem;
   }
 }
 
