@@ -2,10 +2,10 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>Noémie Poncet - Développeuse Front End</title>
+    <title>Noémie Poncet - Développeuse Front End Senior</title>
     <meta
       name="description"
-      content="Résumé de mes expériences professionnelles, compétences techniques et formations en tant que développeuse Front End."
+      content="Résumé de mes expériences professionnelles, compétences techniques et formations en tant que développeuse Front End Senior."
     />
     <meta name="viewport" content="width=device-width" />
     <link
@@ -43,11 +43,11 @@
   <body>
     <div class="wrapper">
       <div class="page">
-        <header class="page-header">
+        <header id="pageHeader" class="page-header">
           <h1 class="page-title">
             Noémie Poncet
           </h1>
-          <p class="page-subtitle tag">Développeuse Front End</p>
+          <p class="page-subtitle">Développeuse Front End Senior</p>
         </header>
         <div class="page-content">
           <section class="section">
@@ -57,7 +57,8 @@
             <div class="page-contact">
               <ul>
                 <li>
-                  J'ai 34 ans et habite Paris (18).<br />
+                  J'ai <span id="whatsMyAgeAgain"></span> ans et habite Paris
+                  (18).<br />
                   Vous pouvez me joindre au
                   <a href="tel:+33664976316" class="nowrap">06 64 97 63 16</a>
                   ou par email via
@@ -74,7 +75,7 @@
               <li class="list-item">
                 <div class="tag">Depuis 2018</div>
                 <p>
-                  Développeuse Front End @<a
+                  Développeuse Front End Senior @<a
                     href="http://mangopay.com"
                     target="_blank"
                     ><strong>Mangopay</strong></a
@@ -85,7 +86,7 @@
               <li class="list-item">
                 <div class="tag">2013 - 2017</div>
                 <p>
-                  Intégratrice senior / UX Designer @<strong
+                  Développeuse Front End / UX Designer @<strong
                     >Cheetah Mobile</strong
                   >
                   <small>(Advertising mobile)</small>
@@ -108,7 +109,7 @@
               <li><div class="tag tag-ghost hide-print hide-sm">+</div></li>
               <li class="list-item">
                 <div class="tag">Depuis 2007</div>
-                <p>Developpeuse web freelance</p>
+                <p>Developpeuse full stack freelance</p>
               </li>
             </ul>
           </section>
@@ -116,7 +117,7 @@
             <h2 class="section-title">Cursus</h2>
             <ul class="list">
               <li class="list-item">
-                <div class="tag">2018 - 2019</div>
+                <div class="tag">2018</div>
                 <p>
                   Formation Développeur d'application - Front End @<strong
                     >OpenClassrooms</strong
@@ -156,16 +157,17 @@
                 </p>
               </li>
               <li class="list-item">
-                <div class="tag tag-light">Logiciels</div>
+                <div class="tag tag-light">Logiciels & Apps</div>
                 <p>
-                  Visual Studio Code, Sketch, Balsamiq, Suite Adobe ( Photoshop
-                  - Illustrator).
+                  Visual Studio Code, Zeplin, Jira, Suite Adobe (Photoshop -
+                  Illustrator).
                 </p>
               </li>
               <li class="list-item">
                 <div class="tag tag-light">Langues</div>
                 <p>
-                  Anglais (bon niveau écrit & lu, niveau scolaire à l'oral).
+                  Anglais : bon niveau lu & écrit (CECRL B1+/B2), niveau
+                  scolaire à l'oral.
                 </p>
               </li>
             </ul>
@@ -174,15 +176,24 @@
             <div>
               <h2 class="section-title">Intérêts & Loisirs</h2>
               <p>
-                UX design, dessin, BD, bullet journal, musique et concerts.
+                Dessin, bande dessinée, bullet journal, musique et concerts.
               </p>
             </div>
           </section>
         </div>
       </div>
-      <footer class="page-footer hide-print">
-        2019 &copy; noemieponcet.com
-      </footer>
+      <footer id="pageFooter" class="page-footer hide-print"></footer>
     </div>
   </body>
 </html>
+<script>
+  const siteName = "noemieponcet.com";
+  const fullYear = new Date().getFullYear();
+  const birthYear = 1985;
+
+  document.getElementById("whatsMyAgeAgain").innerHTML = fullYear - birthYear;
+
+  document.getElementById(
+    "pageFooter"
+  ).innerHTML = `${fullYear} &copy; ${siteName}`;
+</script>
