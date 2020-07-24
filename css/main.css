@@ -213,7 +213,7 @@ section {
     font-size: 2rem;
   }
   .page-subtitle {
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
   }
   .hide-sm {
     display: none;
