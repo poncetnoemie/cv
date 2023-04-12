@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #222;
+  font-family: "Quicksand", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+h1,
+h2,
+[class*="title"] {
+  font-family: "Quicksand", Helvetica, Arial, sans-serif;
+  font-size: 125%;
+  font-weight: 700;
+}
+a,
+a:visited {
+  color: #222;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+ul > li {
+  margin-bottom: 1.5rem;
+}
+ul > li:last-child {
+  margin-bottom: 3rem;
+}
+p {
+  margin: 0.5em 0;
+}
+header,
+footer,
+section {
+  display: block;
+}
+
+.bold {
+  font-weight: bold;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 3rem;
+  width: 100%;
+}
+.page {
+  background-color: #ffffff;
+  border: 2px solid #222;
+  margin-top: 6rem;
+  padding: 6rem;
+}
+.page-header,
+.page-footer {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+.page-footer {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+.page-title {
+  font-size: 6rem;
+  margin: 0;
+}
+.list-item,
+.section-subtitle,
+.tag {
+  display: inline-block;
+  vertical-align: middle;
+}
+.list-item .section-subtitle {
+  font-size: 1.6rem;
+}
+.page-subtitle,
+.tag {
+  background-color: #222;
+  border: 2px solid #222;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 80%;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  min-width: 15rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.tag-ghost,
+.tag-light {
+  background-color: transparent;
+  color: #222;
+}
+.tag-ghost {
+  border-color: transparent;
+  padding: 0 1rem;
+  font-size: 1.8rem;
+}
+.page-subtitle {
+  font-size: 90%;
+}
+.section p {
+  margin: 1.5rem 0;
+}
+.section > p {
+  margin-bottom: 4rem;
+}
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.list {
+  padding-top: 1rem;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+}
+.list-item p {
+  margin: 0;
+}
+.list-item span {
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-device-width: 640px),
+  only screen and (max-width: 640px) {
+  html,
+  body {
+    -webkit-text-size-adjust: none;
+    min-width: 100% !important;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  small {
+    display: block;
+  }
+  small {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  .page {
+    margin-top: 0;
+    padding: 2.5rem;
+  }
+  .page-footer {
+    margin-bottom: 0;
+  }
+  .page-title {
+    font-size: 5rem;
+    line-height: 1;
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+  }
+  .page-content {
+    padding: 0;
+  }
+  .page-header {
+    margin-bottom: 3rem;
+  }
+  .section-subtitle,
+  .tag,
+  .list-item {
+    display: block;
+    margin: 0;
+    text-align: left;
+  }
+  .list-item p {
+    margin-bottom: 4.5rem;
+  }
+  .tag {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 100%;
+  }
+  .section-subtitle {
+    font-size: 2rem;
+  }
+  .page-subtitle {
+    margin: 0 auto 3rem;
+  }
+  .hide-sm {
+    display: none;
+  }
+}
+
+@media print {
+  html,
+  body {
+    page-break-after: avoid;
+    page-break-before: avoid;
+  }
+
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  .page-title,
+  .page-subtitle,
+  .tag,
+  .section-title,
+  .section-subtitle {
+    background-color: transparent;
+    color: #222 !important;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .wrapper {
+    page-break-after: auto;
+    padding: 0;
+  }
+
+  .page {
+    margin-top: 0;
+    padding: 0 1rem;
+    border: none;
+  }
+  .page-title {
+    font-size: 4rem;
+    line-height: normal;
+  }
+  .page-subtitle {
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  .section:first-child,
+  .page-header {
+    margin-top: 3rem;
+  }
+  .page-header {
+    margin: 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section:first-child {
+    margin-top: 0;
+  }
+  .section > p,
+  ul > li:last-child {
+    margin-bottom: 3rem !important;
+  }
+  .section p {
+    margin: 0;
+    line-height: normal;
+  }
+  .page-content,
+  .page-content ul {
+    margin: 0;
+    padding: 0;
+  }
+  .hide-print {
+    display: none;
+  }
+}

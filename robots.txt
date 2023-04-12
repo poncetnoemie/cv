@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: noemieponcet.com/sitemap.xml
