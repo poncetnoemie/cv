@@ -103,7 +103,7 @@ section {
   font-weight: bold;
   margin-right: 1.5rem;
   min-width: 15rem;
-  padding: 0.75rem 1rem;
+  padding: 0.6rem 1rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -216,7 +216,7 @@ section {
     page-break-before: avoid;
   }
 
-  html,
+  /* html,
   body,
   h1,
   h2,
@@ -229,7 +229,7 @@ section {
     background-color: transparent;
     color: #222 !important;
     font-family: Arial, Helvetica, sans-serif;
-  }
+  } */
   .wrapper {
     page-break-after: auto;
     padding: 0;
